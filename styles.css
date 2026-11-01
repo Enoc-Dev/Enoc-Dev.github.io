@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"Josefin Sans", system-ui;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom right, #3C0D0D, #1A1A1A, #2F2F2F);
+}
+.textFor_me{
+    width: 610px;
+}
+.textFor_me h1{
+    color: white;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.textFor_me h5{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.textFor_me p{
+    color: #fcf;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-align: justify;
+    font-size: 22px;
+    margin-bottom: 45px;
+}
+.appropos img{
+    height: auto;
+    width: 420px;
+    border-radius: 20px;
+}
+
+.main{
+    display: flex;
+    width: 1130px;
+    max-width: 100%;
+    margin : O auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #f9004d;
+}
+.btn-groupe{
+    display: flex;
+    gap: 15px;
+}
+button{
+    background: #f9004d;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        flex-direction:column ;
+        align-items: center;
+    }
+    .main img{
+        width: 63%;
+        max-width: none;
+    }
+    .textFor_me h1{
+        font-size: 28px;
+    }
+    .textFor_me h5{
+        font-size: 20px; 
+    }
+    .textFor_me p{
+       font-size: 14px;
+    }
+    .textFor_me{
+        width: 80%;
+        text-align: center;
+    }
+    button{
+        flex: 1;
+        margin: 15px 5px;
+    }
+}
